@@ -55,8 +55,11 @@ D7 = X Y Z
 ## Figure -04 8 to 3 Decoder implementation 
 
 ### Procedure
-/* write all the steps invloved */
 
+1. create module encoder and decoder.
+2. Get inputs and outputs for encoders and decoders.
+3. perform or operation for encoder and and logic for decoders.
+4. perform RTL LOGIC and get waveform.
 
 
 ### PROGRAM 
@@ -98,34 +101,36 @@ endmodule
 
 
 
-### RTL LOGIC  
+### RTL LOGIC 
+
 **ENCODER**
+
 ![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/e92c77e9-0f55-4089-9d5e-29ec536d0b75)
+
 **DECODER**
+
 ![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/171e6a24-1de3-485a-b7b7-19a8ab9d6c4c)
 
-
-
-
-
-
-
-
 ### TIMING DIGRAMS  
+
 **ENCODER**
+
 ![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/aa6406d1-95ce-4fc8-93a9-29cd4a8229c3)
+
 **DECODER**
 
+![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/7aa2e433-5885-4ad4-965c-a11bdd965110)
 
+### TRUTH TABLE
 
+**ENCODER**
 
+![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/a59bdc98-a696-4b30-9064-2ecd85bb34cb)
 
+**DECODER**
 
-### TRUTH TABLE 
-
-
-
-
+![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/04f5da5d-e2b7-4907-89ea-fb880b3eff32)
 
 
 ### RESULTS 
+Thus the program to desing encoder and decoder is done.
