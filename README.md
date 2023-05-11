@@ -60,11 +60,38 @@ D7 = X Y Z
 
 
 ### PROGRAM 
-/*
+```
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: SHALINI V
+RegisterNumber:  212222240096
+**ENCODER**
+module encoder(d0,d1,d2,d3,d4,d5,d6,d7,x,y,z);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output x,y,z;
+or(x,d4,d5,d6,d7);
+or(y,d2,d3,d6,d7);
+or(z,d1,d3,d5,d7);
+endmodule
+
+**DECODER**
+module deco(x,y,z,d0,d1,d2,d3,d4,d5,d6,d7);
+input x,y,z;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+wire xbar,ybar,zbar;
+not(xbar,x);
+not(ybar,y);
+not(zbar,z);
+and(d0,xbar,ybar,zbar);
+and(d1,xbar,ybar,z);
+and(d2,xbar,y,zbar);
+and(d3,xbar,y,z);
+and(d4,x,ybar,z);
+and(d5,x,ybar,z);
+and(d6,x,y,zbar);
+and(d7,x,y,z);
+endmodule
+
+```
 
 
 
@@ -72,6 +99,10 @@ RegisterNumber:
 
 
 ### RTL LOGIC  
+**ENCODER**
+![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/e92c77e9-0f55-4089-9d5e-29ec536d0b75)
+**DECODER**
+![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/171e6a24-1de3-485a-b7b7-19a8ab9d6c4c)
 
 
 
@@ -81,6 +112,10 @@ RegisterNumber:
 
 
 ### TIMING DIGRAMS  
+**ENCODER**
+![image](https://github.com/shalini-venkatesan/Experiment-08-Encoders-and-decoders-/assets/118720291/aa6406d1-95ce-4fc8-93a9-29cd4a8229c3)
+**DECODER**
+
 
 
 
